@@ -44,33 +44,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-
-* Introucimos una hoja de estilos:
-
-```css
-.example {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-span {
-    font-sized: 20px;
-    color: 10px;
-}
-
-img {
-    margin-top: 10px;
-    width: 150px;
-    height: 50px;
-}
-
-```
-
-* Enlazamos nuestros estilos a la página html:
-
-```
-<link rel="stylesheet" type="text/css" href="./app.css">
-```
