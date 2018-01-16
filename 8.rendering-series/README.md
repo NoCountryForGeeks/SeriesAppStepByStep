@@ -36,7 +36,7 @@ class MasterSeries extends Component {
 export default MasterSeries;
 ```
 
-Estas props ahora las recogeremos en el componente **SeriesGrid** que en este caso se trata de un componente presentacional que va a renderizar un array de componentes **SerieCard**.
+Estas props ahora las recogeremos en el componente **SeriesGrid** que en este caso se trata de un componente funcional que va a renderizar un array de componentes **SerieCard**.
 
 ```javascript
 import React from 'react';
@@ -52,7 +52,7 @@ const SeriesGrid = ({ series }) =>
 export { SeriesGrid }
 ```
 
-Nuestro componente **SerieCard** también es un componente presentacional que va a renderizar los datos de nuestras series.
+Nuestro componente **SerieCard** también es un componente funcional que va a renderizar los datos de nuestras series.
 
 ```javascript
 import React from 'react';
@@ -67,12 +67,12 @@ const SerieCard = ({ serie }) =>
 export { SerieCard }
 ```
 
-Si ejecutamos, en la consola del navegador tendremos un **Warning** por parte de React que nos dirá lo siguiente:
+Si ejecutamos, en la consola del navegador tendremos un **Warning** por parte de **React** que nos dirá lo siguiente:
 ```
 Warning: Each child in an array or iterator should have a unique "key" prop.
 ```
 
-Para solucionar este **Warning** necesitamos añadir una prop **key** cuando manejemos arrays de componentes, de esta manera **React** sabrá manejar los componente mas rapidamente.
+Para solucionar este **Warning** necesitamos añadir una **prop** llamada **key** (no tenemos que hacer nada con ella en el componente hijo) cuando manejemos arrays de componentes, de esta manera **React** sabrá manejar los componente mas rapidamente.
 
 ```javascript
 series.map(serie => <SerieCard key={ serie.title } serie={ serie }/>)

@@ -10,4 +10,4 @@ class MasterSeries extends Component {
     }
 }
 
-export default MasterSeries;
+export { MasterSeries };
