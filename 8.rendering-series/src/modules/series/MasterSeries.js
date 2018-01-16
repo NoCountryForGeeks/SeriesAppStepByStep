@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import { SeriesGrid } from './masterSeries/SeriesGrid';
+
 class MasterSeries extends Component {
 
     constructor() {
@@ -18,10 +20,10 @@ class MasterSeries extends Component {
     render() {
         return(
             <div>
-                <span>Master Page</span>
+                <SeriesGrid series={ this.state.series } />
             </div>
         );
     }
 }
 
-export default MasterSeries;
+export { MasterSeries };

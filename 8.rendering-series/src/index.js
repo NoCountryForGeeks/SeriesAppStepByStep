@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import MasterSeries from './modules/MasterSeries';
+import { MasterSeries } from './modules/series/MasterSeries';
 
 ReactDOM.render(
     <MasterSeries />,
