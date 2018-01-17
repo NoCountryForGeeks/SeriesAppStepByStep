@@ -29,6 +29,8 @@ const Routes = () =>
 export { Routes }
 ```
 
+El exact lo que nos va a indicar es que se renderice cuando la ruta machee exactamente con lo que hemos indicado por que si no cuando pusiesemos **/eries/1** cogeria esta, ya que para el machearía completamente y es la primera en el orden del **<Switch>**
+
 Para comprobar que se renderiza nuestra ruta cuando navegamos a **/series/1** vamos a poner un texto de ejemplo en el componente.
 
 **DetailSerie.js**
