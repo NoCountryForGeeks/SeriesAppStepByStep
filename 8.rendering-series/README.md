@@ -36,7 +36,7 @@ class MasterSeries extends Component {
 export default MasterSeries;
 ```
 
-Estas props ahora las recogeremos en el componente **SeriesGrid** que en este caso se trata de un componente funcional que va a renderizar un array de componentes **SerieCard**.
+Estas props ahora las recogeremos en el componente **SeriesGrid** que en este caso se trata de un componente funcional que va a renderizar un array de componentes **SerieCard**. Para renderizar un array de objetos como componentes lo que vamos a usar la función **map** de **JavaScript** esta funcion recorrerá todo el array y ejecutara el callback que le pasemos por cada uno de los valoresd el array, este callback tiene que retornar un elemento. L función **map** trabaja con inmutabilidad, es decir, no modifica el array que recorre si no que nos da un nuevo array con los valores retornados en el callback.
 
 ```javascript
 import React from 'react';
