@@ -1,0 +1,23 @@
+{
+    "name": "5.real-example",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "SET NODE_ENV=development&&parcel index.html",
+        "build": "SET NODE_ENV=production&&parcel build index.html"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.2.5",
+        "babel-preset-react-app": "^3.1.0",
+        "node-sass": "^4.7.2",
+        "parcel-bundler": "^1.4.1",
+        "postcss-modules": "^1.1.0"
+    },
+    "dependencies": {
+        "axios": "^0.17.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-router-dom": "^4.2.2"
+    }
+}
