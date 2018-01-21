@@ -1,0 +1,30 @@
+.actor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(211, 211, 211);
+    padding: 0.8em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    div {
+        width: 40%;
+
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
+    svg {
+        width: 10%;
+        fill: #828080;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        color: #828080;
+        font-weight: bold;
+    }
+}

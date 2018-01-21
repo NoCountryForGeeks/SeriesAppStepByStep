@@ -8,7 +8,7 @@ const Routes = () =>
         <Route exact path='/'>
             <Redirect to='series'/>
         </Route>
-        <Route exact path='' component={ MasterSeries } />
+        <Route exact path='/series' component={ MasterSeries } />
     </Switch>
 
 

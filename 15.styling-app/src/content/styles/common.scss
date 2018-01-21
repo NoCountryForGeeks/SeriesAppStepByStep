@@ -1,0 +1,13 @@
+@import './reset.scss';
+
+body,
+html,
+body > div {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: Arial;
+    background: rgb(204, 203, 203);
+}

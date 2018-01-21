@@ -9,7 +9,6 @@ const Routes = () =>
         <Route exact path='/'>
             <Redirect to='series'/>
         </Route>
-        <Route exact path='' component={ MasterSeries } />
         <Route exact path='/series' component={ MasterSeries } />
         <Route path='/series/:id' component={ DetailSerie } />
     </Switch>
