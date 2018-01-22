@@ -9,5 +9,8 @@ body > div {
 
 body {
     font-family: Arial;
-    background: rgb(204, 203, 203);
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }

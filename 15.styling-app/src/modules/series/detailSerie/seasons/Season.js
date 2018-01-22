@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Episode } from './season/Episode';
 
 import seassonStyles from './seasson.scss';
+import arrowDownIcon from '../../../../content/icons/down-arrow.png'
 
 class Season extends Component {
     constructor() {
@@ -20,7 +21,7 @@ class Season extends Component {
             <div className={ seassonStyles.seasson }>
                 <div className={ seassonStyles.seassonInfoContainer }>
                     <h3>Season { this.props.season.seasson }</h3>
-                    <button onClick={ () => this.toogle() }>Toogle</button>
+                    <img src={ arrowDownIcon } onClick={ () => this.toogle() } className={ this.state.isOpen ? seassonStyles.arrowDown : seassonStyles.arrowUp }/>
                 </div>
                 <div>
                     { this.state.isOpen ? this.props.season.episodes.map(episode => 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import actorStyles from './actor.scss';
+import exchangeIcon from '../../../../content/icons/exchange.png'
 
 const Actor = ({ actor: { person, character} }) => 
         <div className={ actorStyles.actor }>

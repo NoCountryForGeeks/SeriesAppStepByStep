@@ -1,6 +1,6 @@
 .serieSearch {
     height: 250px;
-    background: url(../../../../../content/images/peaky.jpg);
+    background: url(../../../content/images/peaky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -100px;
@@ -11,7 +11,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: rgb(82, 150, 135);
+        background: black;
         opacity: 0.4;
     }
 
@@ -52,6 +52,11 @@
             border-radius: 0 3px 3px 0;
             max-height: 3em;
             cursor: pointer;
+
+            img {
+                width: .8em;
+                height: .8em;
+            }
         }
     }
 }

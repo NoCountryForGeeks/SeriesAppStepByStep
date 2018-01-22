@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
 import searchStyles from './seriesSearch.scss';
+import peakyImage from '../../../content/images/peaky.jpg'
+import magnifierIcon from '../../../content/icons/magnifier.png';
 
 class SeriesSearch extends Component {
 
@@ -32,7 +35,7 @@ class SeriesSearch extends Component {
                         onKeyUp={ event => this.updateSearchValue(event) }
                     />
                     <button type="submit">
-                        Search
+                        <img src={ magnifierIcon } />
                     </button>
                 </form>
             </div>
