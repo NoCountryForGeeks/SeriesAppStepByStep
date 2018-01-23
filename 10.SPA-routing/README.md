@@ -33,13 +33,16 @@ Desde este fichero vamos a exportar las rutas como un componente funcional compu
 **routes.js**
 ```javascript
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 import { MasterSeries } from './modules/series/MasterSeries';
 
 const Routes = () => 
     <Switch>
-        <Route path='' component={ MasterSeries } />
+        <Route exact path='/'>
+            <Redirect to='series'/>
+        </Route>
+        <Route exact path='' component={ MasterSeries } />
     </Switch>
 
 
@@ -53,9 +56,11 @@ Como podemos ver, hay 2 componentes que usamos de la librería **react-router-do
 /series/id -> Muestra el detalle de una serie
 ```
 
-Como podemos ver ambas rutas cuelgan de **series** cuando exista mas de una ruta colgando de la misma url tendremos que envolverlas entre la etiqueta *<Switch></Switch>*. Mas a delante comprenderemos el uso de esta etiqueta cuando añadamos nuestra otra ruta.
+Si nos fijamos, vemos ambas rutas cuelgan de **series** cuando exista mas de una ruta colgando de la misma url tendremos que envolverlas entre la etiqueta *<Switch></Switch>*. Mas a delante comprenderemos el uso de esta etiqueta cuando añadamos nuestra otra ruta.
 
 El otro Componente que estamos usando aquí es **<Route>** como su propio nombre indica tiene el rol de **ruta**. Podemos ver que le estamos pasando 2 atributos, 1 es **path** donde le vamos a indicar el macheo de la url, en este caso es el raíz y el otro atributo es **component** donde vamos a pasarle el componente que tiene que renderizar cuando estemos en el **path* indicado.
+
+Hemos puesto un **Route** que dentro tiene un **Redirect** esto es por que nuestro componente **MasterSeries** se va a renderizar si estamos en la ruta **/series** si entrasemos a nuestro raiz de la aplicación no se renderizaría nada por que no hay una ruta que coincida, por eso le hemos dicho que si esta en el raiz la aplicación que redirija a /series para que se muestre algo en pantalla.
 
 Ahora nos queda terminar de configurar nuestro routing de la aplicación, si nos fijamos en el **index.js** le estamos diciendo directamente en el render que renderize el componente **MasterSeries**. Ahora tenemos que decirle que renderice nuestro router, ya que este se va a encargar de renderizar lo que sea necesario.
 
