@@ -16,7 +16,7 @@ node -v
 
 Cuando ejecutemos el comando debería de reconocer nuestro comando y debería mostrarnos la version de node que tenemos.
 
-![Versión Node](./images/versionNode.jpg)
+![Versión Node](./images/versionNode.JPG)
 
 Con esto habriíamos acabado la instalación de **Node**
 
@@ -29,7 +29,7 @@ Por defecto **Node** viene ya con un manejador de paquetes que es **npm** pero n
 
 Para instalarnos **yarn** nos vamos a la [página oficial de yarn](https://yarnpkg.com/lang/en/docs/install/) y nos descargamos el instalador de la plataforma de nuestro pc.
 
-![yarn](./images/yarn.jpg)
+![yarn](./images/yarn.JPG)
 
 Ejecutamos el instalador dejando todos los pasos que vienen por defecto.
 
@@ -59,7 +59,7 @@ Cuando hayamos instalado **Visual Studio Code** vamos a ejecutar el programa y v
 
 Si nos fijamos, en el lado izquierdo tenemos una barra en el cual nos aparece la opcion de **extensiones** que es el último icono.
 
-![Visual Studio extensiones](./images/VSExtensions.jpg)
+![Visual Studio extensiones](./images/VSExtensions.JPG)
 
 En mi caso recomiendo instalar las extensiones:
 
