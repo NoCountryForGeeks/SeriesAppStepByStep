@@ -1,0 +1,16 @@
+@import './reset.scss';
+
+body,
+html,
+body > div {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: Arial;
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

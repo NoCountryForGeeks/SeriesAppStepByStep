@@ -2,10 +2,10 @@ import React from 'react';
 import { Season } from './seasons/Season';
 
 const Seasons = ({ seasons }) => 
-    <div>
+    <ul>
         { seasons.map(season => 
-                <Season key={ season.title } season={ season }  />) 
+                <Season key={ season.seasson } season={ season } />) 
         }
-    </div>
+    </ul>
 
 export { Seasons };

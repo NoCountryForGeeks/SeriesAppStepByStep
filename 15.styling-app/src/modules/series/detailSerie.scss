@@ -1,0 +1,16 @@
+.detailSerie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailSerieContainner {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

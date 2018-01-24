@@ -43,11 +43,11 @@ import React from 'react';
 import { SerieCard } from './seriesGrid/SerieCard';
 
 const SeriesGrid = ({ series }) => 
-    <div>
+    <ul>
         {
             series.map(serie => <SerieCard serie={ serie }/>)
         }
-    </div>
+    </ul>
 
 export { SeriesGrid }
 ```
@@ -58,11 +58,11 @@ Nuestro componente **SerieCard** también es un componente funcional que va a re
 import React from 'react';
 
 const SerieCard = ({ serie }) => 
-    <div>
+    <li>
         <img src={ serie.image.medium } alt={ serie.title } />
         <h2>{ serie.title }</h2>
         <span>Language: { serie.language }</span>
-    </div>
+    </li>
 
 export { SerieCard }
 ```

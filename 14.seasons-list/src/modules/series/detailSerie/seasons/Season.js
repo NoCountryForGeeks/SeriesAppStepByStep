@@ -15,20 +15,20 @@ class Season extends Component {
 
     render() {
         return(
-            <div>
+            <li>
                 <div>
                     <span>Season: { this.props.season.seasson }</span>
                     <button onClick={ () => this.toogle() }>Toogle</button>
                 </div>
-                <div>
+                <ul>
                     { this.state.isOpen ? this.props.season.episodes.map(episode => 
                         <Episode 
                             key={ episode.title } 
                             episode={ episode } 
                         />) : null 
                     }    
-                </div>
-            </div>
+                </ul>
+            </li>
         )
     }
 }
