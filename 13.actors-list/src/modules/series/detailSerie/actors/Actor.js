@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Actor = ({ actor: { person, character} }) => 
-        <div>
+        <li>
             <div>
                 <img src={ person.image ? person.image.medium : null } alt={ person.name } />
                 <span>{ person.name }</span>
@@ -10,6 +10,6 @@ const Actor = ({ actor: { person, character} }) =>
                 <img src={ character.image ? character.image.medium : null } alt={ character.name } />
                 <span>{ character.name }</span>
             </div>
-        </div>
+        </li>
 
 export { Actor };

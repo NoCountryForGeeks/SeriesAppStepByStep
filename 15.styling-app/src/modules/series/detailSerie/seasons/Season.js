@@ -18,20 +18,20 @@ class Season extends Component {
 
     render() {
         return(
-            <div className={ seassonStyles.seasson }>
+            <li className={ seassonStyles.seasson }>
                 <div className={ seassonStyles.seassonInfoContainer }>
                     <h3>Season { this.props.season.seasson }</h3>
                     <img src={ arrowDownIcon } onClick={ () => this.toogle() } className={ this.state.isOpen ? seassonStyles.arrowDown : seassonStyles.arrowUp }/>
                 </div>
-                <div>
+                <ul>
                     { this.state.isOpen ? this.props.season.episodes.map(episode => 
                         <Episode 
                             key={ episode.title } 
                             episode={ episode } 
                         />) : null 
                     }    
-                </div>
-            </div>
+                </ul>
+            </li>
         )
     }
 }

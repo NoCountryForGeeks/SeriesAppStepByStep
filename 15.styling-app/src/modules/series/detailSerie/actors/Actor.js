@@ -4,7 +4,7 @@ import actorStyles from './actor.scss';
 import exchangeIcon from '../../../../content/icons/exchange.png'
 
 const Actor = ({ actor: { person, character} }) => 
-        <div className={ actorStyles.actor }>
+        <li className={ actorStyles.actor }>
             <div>
                 <img src={ person.image ? person.image.medium : null } alt={ person.name } />
                 <span>{ person.name }</span>
@@ -13,6 +13,6 @@ const Actor = ({ actor: { person, character} }) =>
                 <img src={ character.image ? character.image.medium : null } alt={ character.name } />
                 <span>{ character.name }</span>
             </div>
-        </div>
+        </li>
 
 export { Actor };

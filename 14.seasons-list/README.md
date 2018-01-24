@@ -9,11 +9,11 @@ import React from 'react';
 import { Season } from './seasons/Season';
 
 const Seasons = ({ seasons }) => 
-    <div>
+    <ul>
         { seasons.map(season => 
-                <Season key={ season.title } season={ season }  />) 
+                <Season key={ season.seasson } season={ season }  />) 
         }
-    </div>
+    </ul>
 
 export { Seasons };
 ```
@@ -38,20 +38,20 @@ class Season extends Component {
 
     render() {
         return(
-            <div>
+            <li>
                 <div>
                     <span>Season: { this.props.season.seasson }</span>
                     <button onClick={ () => this.toogle() }>Toogle</button>
                 </div>
-                <div>
+                <ul>
                     { this.state.isOpen ? this.props.season.episodes.map(episode => 
                         <Episode 
                             key={ episode.title } 
                             episode={ episode } 
                         />) : null 
                     }    
-                </div>
-            </div>
+                </ul>
+            </li>
         )
     }
 }
@@ -69,10 +69,10 @@ Lo ultimo que nos queda es el componente **Episode**.
 import React from 'react';
 
 const Episode = ({ episode }) => 
-    <div>
+    <li>
         <img src={ episode.image ? episode.image.medium : null } alt={ episode.title } />
         <span>{ episode.title }</span>
-    </div>
+    </li>
 
 export { Episode };
 ```

@@ -2,10 +2,10 @@ import React from 'react';
 import { SerieCard } from './seriesGrid/SerieCard';
 
 const SeriesGrid = ({ series }) => 
-    <div>
+    <ul>
         {
             series.map(serie => <SerieCard key={ serie.title } serie={ serie }/>)
         }
-    </div>
+    </ul>
 
 export { SeriesGrid }

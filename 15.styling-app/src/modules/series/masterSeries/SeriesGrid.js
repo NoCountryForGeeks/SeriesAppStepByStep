@@ -3,10 +3,10 @@ import { SerieCard } from './seriesGrid/SerieCard';
 import seriesGridStyles from './seriesGrid.scss';
 
 const SeriesGrid = ({ series }) => 
-    <div className={ seriesGridStyles.seriesGrid }>
+    <ul className={ seriesGridStyles.seriesGrid }>
         {
             series.map(serie => <SerieCard key={ serie.title } serie={ serie }/>)
         }
-    </div>
+    </ul>
 
 export { SeriesGrid }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import serieCardStyles from './serieCard.scss';
 
 const SerieCard = ({ serie }) => 
-    <article className={ serieCardStyles.serieCard }>
+    <li className={ serieCardStyles.serieCard }>
         <Link to={ `/series/${serie.id}` }>
             <figure>
                 <img src={  serie.image.medium } alt={ serie.title } />
@@ -13,6 +13,6 @@ const SerieCard = ({ serie }) =>
                 </figcaption>            
             </figure>
         </Link>   
-    </article>
+    </li>
 
 export { SerieCard }
