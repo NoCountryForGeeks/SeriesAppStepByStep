@@ -2,13 +2,13 @@
 
 ## 1- Instalar Node
 
-Para instalar **Node** tenemos que irnos a la [página oficial de Node](https://nodejs.org/en/) donde nos aparecerán dos versiones de **Node** para descargar. Instalaremos la recomendada, ay que hay ocasiones que las ultimas versiones no funcionan con todos los paquetes.
+Para instalar **Node** tenemos que irnos a la [página oficial de Node](https://nodejs.org/en/) donde nos aparecerán dos versiones de **Node** para descargar. Instalaremos la recomendada, hay ocasiones que las ultimas versiones no funcionan con todos los paquetes.
 
 ![Portal Node](./images/node.JPG)
 
 Cuando se haya descargado el ejecutable lanzaremos la instalación, dejaremos todos los pasos que vienen por defecto.
 
-Una vez instalado **Node** para comprobar si se ha instalado correctamente, abriremos una coonsola de comandos y ejecutaremos
+Una vez instalado **Node** para comprobar si se ha instalado correctamente, abriremos una consola de comandos y ejecutaremos
 
 ```
 node -v 
@@ -18,14 +18,14 @@ Cuando ejecutemos el comando debería de reconocer nuestro comando y debería mo
 
 ![Versión Node](./images/versionNode.JPG)
 
-Con esto habriíamos acabado la instalación de **Node**
+Con esto habríamos acabado la instalación de **Node**
 
 
 ## 2- Instalación Yarn
 
 Por defecto **Node** viene ya con un manejador de paquetes que es **npm** pero nosotros vamos a instalar **yarn** que es otro manejador de paquetes.
 
-**Yarn** nos da un mayor performance, offline cache que nos permite instalar aquellos paquetes que ya hemos instalado alguna vez en el pc sin conexión y tiene un nuevo algoritmo de instalación que nos va hacer olvidar **"En mi máquina funciona"**.
+**Yarn** nos da un mayor performance, nos pèrmite instalar en modo sin conexión (offline cache) aquellos paquetes que ya hemos instalado algunavez en el PC. Además tiene un nuevo algoritmo de instalación que nos va hacer olvidar **"En mi máquina funciona"**.
 
 Para instalarnos **yarn** nos vamos a la [página oficial de yarn](https://yarnpkg.com/lang/en/docs/install/) y nos descargamos el instalador de la plataforma de nuestro pc.
 
@@ -39,11 +39,11 @@ Cuando haya terminado la instalación abrimos una consola de comandos y ejecutar
 yarn -v
 ```
 
-Cuando ejecutemos el comando debería de reconocer nuestro comando y debería mostrarnos la version de node que tenemos.
+Si nos muestra la versión de Node es que lo tenemos instalado correctamente.
 
 ![Versión yarn](./images/versionYarn.JPG)
 
-Con esto habriíamos acabado la instalación de **Yarn**.
+Con esto habríamos acabado la instalación de **Yarn**.
 
 ## 3- Instalación IDE
 
@@ -57,7 +57,7 @@ Una vez descargado, intalaremos **Visual Studio Code**. Si queremos que nos gene
 
 Cuando hayamos instalado **Visual Studio Code** vamos a ejecutar el programa y vamos a instalar extensiones que nos faciliten un poco el trabajo.
 
-Si nos fijamos, en el lado izquierdo tenemos una barra en el cual nos aparece la opcion de **extensiones** que es el último icono.
+Si nos fijamos, en el lado izquierdo tenemos una barra en el cual nos aparece la opción de **extensiones** que es el último icono.
 
 ![Visual Studio extensiones](./images/VSExtensions.JPG)
 
