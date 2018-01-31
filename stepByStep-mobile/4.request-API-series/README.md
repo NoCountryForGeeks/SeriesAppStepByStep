@@ -6,7 +6,7 @@ Para hacer llamadas **http** vamos a usar la librería **axios** para ello vamos
 yarn add axios
 ```
 
-Una vez que la tengamos instalada, vamos a irnos a nuestro componente **MasterSeries** y vamos a crear nuestro estado que va a ser un array de series y en el ciclo de vida del componente vamos a llamar al **API** para eso usaeremos el metodo **componentDidMoun()**.
+Una vez que la tengamos instalada, vamos a irnos a nuestro componente **MasterSeries** y vamos a crear nuestro estado que va a ser un array de series y en el ciclo de vida del componente vamos a llamar al **API** para eso usaeremos el metodo **componentDidMount()**.
 
 ```javascript
 import React, { component, Component } from 'react';

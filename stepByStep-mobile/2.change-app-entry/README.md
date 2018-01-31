@@ -24,7 +24,7 @@ registerRootComponent(App);
 
 ```
 
-Aqui lo mas importante es pasarle el componente **App** que vamos a exportar desde el **index.js** el resto son metodos que nos da **Expo** para pasarle nuestro punto de entrada de la aplicación.
+Aquí lo mas importante es pasarle el componente **App** que vamos a exportar desde el **index.js** el resto son metodos que nos da **Expo** para pasarle nuestro punto de entrada de la aplicación.
 
 
 **index.js**
@@ -54,7 +54,7 @@ En este caso hemos copiado y pegado el mismo componente **App** que había en **
 
 Con esto ya podemos eliminar el fichero **App.js** ya que hemos cambiado el punto de entrada de nuesta apliacación.
 
-o ultimo que nos quedaría por cambiar es el el fichero **package.json** la ruta al fichero de entrada de nuestra app en la propiedad **main**.
+Lo ultimo que nos quedaría por cambiar es el el fichero **package.json** la ruta al fichero de entrada de nuestra app en la propiedad **main**.
 
 ```json
 {

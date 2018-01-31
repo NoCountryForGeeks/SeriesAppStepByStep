@@ -1,6 +1,6 @@
 # Master page
 
-Para comenzar con la aplicación tenemos que ver la descomposición de componentes que vamos a necesitar para crear nuestra apliacación. El objetivo es crear la siguiente aplicación móvil.
+Para comenzar con la aplicación tenemos que ver la descomposición de componentes que vamos a necesitar para crear nuestra aplicación. El objetivo es crear la siguiente aplicación móvil.
 
 ![Objetivo de la aplicación](../images/3.master-page/target.JPG)
 
