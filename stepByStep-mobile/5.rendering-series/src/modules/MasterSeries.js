@@ -3,6 +3,8 @@ import { View, Text } from 'react-native';
 
 import axios from 'axios';
 
+import { SeriesGrid } from './masterSeries/SeriesGrid';
+
 class MasterSeries extends Component {
 
     constructor() {
@@ -20,7 +22,7 @@ class MasterSeries extends Component {
     render() {
         return(
             <View>
-                <Text>{ this.series.lenght }</Text>
+                <SeriesGrid series={ this.state.series } />
             </View>
         );
     }
