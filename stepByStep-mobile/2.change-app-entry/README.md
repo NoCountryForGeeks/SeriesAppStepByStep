@@ -24,7 +24,7 @@ registerRootComponent(App);
 
 ```
 
-Aqui lo mas importante es pasarle el componente **App** que vamos a exportar desde el **index.js** el resto son metodos que nos da **Expo** para pasarle nuestro punto de entrada de la aplicación.
+Aquí lo mas importante es pasarle el componente **App** que vamos a exportar desde el **index.js** el resto son metodos que nos da **Expo** para pasarle nuestro punto de entrada de la aplicación.
 
 
 **index.js**
