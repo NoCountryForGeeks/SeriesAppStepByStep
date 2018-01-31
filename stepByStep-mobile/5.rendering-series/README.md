@@ -38,38 +38,25 @@ class MasterSeries extends Component {
 export { MasterSeries }
 ```
 
-Ahora nos vamos a ir a **SeriesGrid.js** y vamos a crear un componente de **clase** ya que necesitamos generar un metodo que renderice la seria cuando usemos la lista virtual.
-
+Ahora nos vamos a ir a **SeriesGrid.js** y vamos a crear un componente de **función**.
 ```javascript
 import React, { Component } from 'react';
-import {
-    FlatList,
-    StyleSheet
-} from 'react-native'
+import { FlatList } from 'react-native'
 import { SerieCard } from './seriesGrid/SerieCard';
 
-class SeriesGrid extends Component {
-    renderSerieCard(serie) {
-        return <SerieCard serie={ serie } />
-    }
-
-    render() {
-        return(
-            <FlatList 
-                data={ this.props.series }
-                renderItem={ ({ item }) => this.renderSerieCard(item) }
-                keyExtractor={ (item) => item.id }
-            />
-        )
-    }
-}
+const SeriesGrid = ({ series }) =>
+    <FlatList 
+        data={ series }
+        renderItem={ ({ item }) => <SerieCard serie={ item } /> }
+        keyExtractor={ (item) => item.id }
+    />
 
 export { SeriesGrid };
 ```
 
 Como vemos estamos renderizando una **FlatList** que es un componente de **React-Native** el cual va a virtualizar la lista de items que le pasemos. Para los que no sepan que es una lista virtual, esta va a ir añadiendo y eliminando las series en la vista que solo esten en la pantalla, de esta manera nuestra interfaz tiene menos elementos renderizados y conseguiremos una vista mas fluida.
 
-Este componente recibe 3 **props**, el **data** va a ser nuestro array de series, **renderItem** es la función la cual va a renderizar el template (en este caso nuestra **SerieCard**) por cada uno de los items, por cada serie que vaya a pintar, nos va a llamar a esa función pasandole la serie correspondiente, esta funcion retorna el template pasandole como una prop la serie, que mas a delante renderizará y la ultima **prop** es **keyExtractor** que hace lo mismo que la **prop key** cuando usamos un **map()**, de esta manera **React** sabe renderizar mas rapida y eficientemente los elementos en pantalla.
+Este componente recibe 3 **props**, el **data** va a ser nuestro array de series. **renderItem** es la función la cual va a renderizar el template (en este caso nuestra **SerieCard**) por cada uno de los items, por cada serie que vaya a renderizar, llamará a esa función pasandole como parámetro la serie y tendremos que retornar el componente que queramos que pinte, **<SerieCard>** recibe una serie como **prop** que en este caso nos lo pasa como parámetro la **FlatList** llamandolo **item**. La ultima **prop** es **keyExtractor** que hace lo mismo que la **prop key** cuando usamos un **map()**, de esta manera **React** sabe renderizar mas rapida y eficientemente los elementos en pantalla.
 
 Por último vamos a crear el componente de **SerieCard**, en este caso es un componente completamente visual por lo que vamos a crear un componente de **función**.
 
