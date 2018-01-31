@@ -28,7 +28,7 @@ Una vez terminado todo elproceso, nos lanzará la aplicación en el dispositivo.
 
  ![Crear proyecto](../images/1.create-project/mobilePreview.JPG)
 
- Por últimos vamos a ve rla estructura de carpetas que nos ha generado **Expo**
+ Por últimos vamos a ver la estructura de carpetas que nos ha generado **Expo**
 
   ![Crear proyecto](../images/1.create-project/folderStructure.JPG)
 
