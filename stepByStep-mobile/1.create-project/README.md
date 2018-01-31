@@ -14,7 +14,7 @@ Cuando le pulsemos **Create** si es el primer proyecto de **Expo** con ese templ
 
 ![Crear proyecto](../images/1.create-project/creationDownload.JPG)
 
-Una vez haya terminado la descarga y se haya generado el proyecto, en la apliacación **Expo** comenzara un proceso que nos va a permitir lanzar la aplicación en un dispositivo fisico o emulador.
+Una vez haya terminado la descarga y se haya generado el proyecto, en la aplicación **Expo** comenzara un proceso que nos va a permitir lanzar la aplicación en un dispositivo fisico o emulador.
 
 ![Crear proyecto](../images/1.create-project/projectStart.JPG)
 
@@ -26,10 +26,10 @@ Como podemos ver, al ser la primera vez que se ejecuta la aplicación **Expo** e
 
 Una vez terminado todo elproceso, nos lanzará la aplicación en el dispositivo.
 
- ![Crear proyecto](../images/1.create-project/mobilePreview.JPG)
+![Crear proyecto](../images/1.create-project/mobilePreview.JPG)
 
- Por últimos vamos a ve rla estructura de carpetas que nos ha generado **Expo**
+Por últimos vamos a ve rla estructura de carpetas que nos ha generado **Expo**
 
-  ![Crear proyecto](../images/1.create-project/folderStructure.JPG)
+![Crear proyecto](../images/1.create-project/folderStructure.JPG)
 
-  En este caso, la entrada de la aplicación es **App.js** y la configuración de los **assets** esta definida en **app.json** donde podemos definir configuraciones distintas para cada plataforma.
+En este caso, la entrada de la aplicación es **App.js** y la configuración de los **assets** esta definida en **app.json** donde podemos definir configuraciones distintas para cada plataforma.
