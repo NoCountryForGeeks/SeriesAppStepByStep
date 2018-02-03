@@ -90,7 +90,6 @@ class MasterSeries extends Component {
     }
 
     render() {
-        console.log(this.props)
         return(
             <View>
                 <SeriesSearch searchSeries={ this.searchSeries.bind(this) }/>
