@@ -8,6 +8,8 @@ modules > series > masterSeries > SeriesSearch.js
 
 En este caso vamos a crear un componente de **clase**, ya que va a necesitar tener estado para manejar el valor de búsqueda.
 
+**SerarchSeries.js**
+
 ```javascript
 import React, { Component } from 'react';
 
@@ -101,7 +103,7 @@ Cada vez que salte el evento **onKeyUp** se ejecutara el metodo **updateSearchVa
 
 Ahora falta realizar la búsqueda de las series, pero surge un problema, nuestras series están en **MasterSeries** y es el único que puede obtener nuevas series y setearlo a su propio **state**, lo que significa que la llamada no la podemos hacer desde el componente **SeriesSearch**. Lo que si podemos hacer es desde **MasterSeries** pasar la función de búsqueda como una **prop** asi cuando se resuelva estará en el contexto de **MasterSeries**.
 
-* MasterSeries.js
+**MasterSeries.js**
 
 ```javascript
 import React, { Component } from 'react';
@@ -142,7 +144,7 @@ class MasterSeries extends Component {
 export { MasterSeries };
 ```
 
-* SeriesSearch.js
+**SeriesSearch.js**
 
 ```javascript
 import React, { Component } from 'react';
